@@ -6,10 +6,10 @@ class Musician:
         self.name = name
 
     def __repr__(self):
-        pass
+        return f'{type(self).__name__} instance. Name = {self.name}'
 
     def __str__(self):
-        pass
+        return f'My name is {self.name} and I play {self.instrument}'
 
     def play_solo(self):
         return self.__class__.solo
